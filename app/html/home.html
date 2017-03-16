@@ -1,0 +1,13 @@
+<div class="col-md-4">
+			<!-- <span ng-bind="name"></span> -->
+			<!-- <span>{{ name }}</span> -->
+	<ul class="list-group">
+		<li ng-repeat="prod in products" class="list-group-item">
+			<p>
+				<span ng-bind="prod.id"></span>&nbsp;<span ng-bind="prod.name"></span>
+			</p>
+			<a class="btn btn-warning" ng-click="editProduct(prod.id)">Edit</a>
+		</li>
+	</ul>
+	<a class="btn btn-info" ng-click="getView(categories)">About</a>	
+</div>
